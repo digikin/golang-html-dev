@@ -10,12 +10,12 @@ type item struct {
 	One, Two, Three string
 }
 
-type time struct {
+type timea struct {
 	Serving string
 	Items   []item
 }
 
-type Time []time
+type time []timea
 
 var tpl *template.Template
 
@@ -24,8 +24,8 @@ func init() {
 }
 
 func main() {
-	x := Time{
-		time{
+	x := time{
+		timea{
 			Serving: "Breakfast",
 			Items: []item{
 				item{
@@ -35,7 +35,7 @@ func main() {
 				},
 			},
 		},
-		time{
+		timea{
 			Serving: "Lunch",
 			Items: []item{
 				item{
@@ -45,7 +45,7 @@ func main() {
 				},
 			},
 		},
-		time{
+		timea{
 			Serving: "Dinner",
 			Items: []item{
 				item{
