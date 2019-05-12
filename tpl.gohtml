@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+</head>
+
+<body>
+{{range .}}
+    {{.Serving}}
+    {{range .Items}}
+    {{.One}}    {{.Two}}    {{.Three}}
+    {{end}}
+{{end}}
+</body>
+</html>
+
+
