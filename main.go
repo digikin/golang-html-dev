@@ -17,6 +17,13 @@ type timea struct {
 
 type time []timea
 
+type resturant struct {
+	Name string
+	Menu time
+}
+
+type resturants []resturant
+
 var tpl *template.Template
 
 func init() {
@@ -24,34 +31,109 @@ func init() {
 }
 
 func main() {
-	x := time{
-		timea{
-			Serving: "Breakfast",
-			Items: []item{
-				item{
-					One:   "Eggs",
-					Two:   "toast",
-					Three: "cerial",
+	x := resturants{
+		resturant{
+			Name: "Denny's",
+			Menu: time{
+				timea{
+					Serving: "Breakfast",
+					Items: []item{
+						item{
+							One:   "Eggs",
+							Two:   "toast",
+							Three: "cerial",
+						},
+					},
+				},
+				timea{
+					Serving: "Lunch",
+					Items: []item{
+						item{
+							One:   "Sandwich",
+							Two:   "Wrap",
+							Three: "hotdogs",
+						},
+					},
+				},
+				timea{
+					Serving: "Dinner",
+					Items: []item{
+						item{
+							One:   "Steak",
+							Two:   "Pork",
+							Three: "Turkey",
+						},
+					},
 				},
 			},
 		},
-		timea{
-			Serving: "Lunch",
-			Items: []item{
-				item{
-					One:   "Sandwich",
-					Two:   "Wrap",
-					Three: "hotdogs",
+		resturant{
+			Name: "IHOP",
+			Menu: time{
+				timea{
+					Serving: "Breakfast",
+					Items: []item{
+						item{
+							One:   "Eggs",
+							Two:   "toast",
+							Three: "cerial",
+						},
+					},
+				},
+				timea{
+					Serving: "Lunch",
+					Items: []item{
+						item{
+							One:   "Sandwich",
+							Two:   "Wrap",
+							Three: "hotdogs",
+						},
+					},
+				},
+				timea{
+					Serving: "Dinner",
+					Items: []item{
+						item{
+							One:   "Steak",
+							Two:   "Pork",
+							Three: "Turkey",
+						},
+					},
 				},
 			},
 		},
-		timea{
-			Serving: "Dinner",
-			Items: []item{
-				item{
-					One:   "Steak",
-					Two:   "Pork",
-					Three: "Turkey",
+		resturant{
+			Name: "Waffle House",
+			Menu: time{
+				timea{
+					Serving: "Breakfast",
+					Items: []item{
+						item{
+							One:   "Eggs",
+							Two:   "toast",
+							Three: "cerial",
+						},
+					},
+				},
+				timea{
+					Serving: "Lunch",
+					Items: []item{
+						item{
+							One:   "Sandwich",
+							Two:   "Wrap",
+							Three: "hotdogs",
+						},
+					},
+				},
+				timea{
+					Serving: "Dinner",
+					Items: []item{
+						item{
+							One:   "Steak",
+							Two:   "Pork",
+							Three: "Turkey",
+						},
+					},
 				},
 			},
 		},
