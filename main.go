@@ -10,12 +10,12 @@ type item struct {
 	One, Two, Three string
 }
 
-type timea struct {
+type shift struct {
 	Serving string
 	Items   []item
 }
 
-type time []timea
+type time []shift
 
 type resturant struct {
 	Name string
@@ -35,7 +35,7 @@ func main() {
 		resturant{
 			Name: "Denny's",
 			Menu: time{
-				timea{
+				shift{
 					Serving: "Breakfast",
 					Items: []item{
 						item{
@@ -45,7 +45,7 @@ func main() {
 						},
 					},
 				},
-				timea{
+				shift{
 					Serving: "Lunch",
 					Items: []item{
 						item{
@@ -55,7 +55,7 @@ func main() {
 						},
 					},
 				},
-				timea{
+				shift{
 					Serving: "Dinner",
 					Items: []item{
 						item{
@@ -70,7 +70,7 @@ func main() {
 		resturant{
 			Name: "IHOP",
 			Menu: time{
-				timea{
+				shift{
 					Serving: "Breakfast",
 					Items: []item{
 						item{
@@ -80,7 +80,7 @@ func main() {
 						},
 					},
 				},
-				timea{
+				shift{
 					Serving: "Lunch",
 					Items: []item{
 						item{
@@ -90,7 +90,7 @@ func main() {
 						},
 					},
 				},
-				timea{
+				shift{
 					Serving: "Dinner",
 					Items: []item{
 						item{
@@ -105,7 +105,7 @@ func main() {
 		resturant{
 			Name: "Waffle House",
 			Menu: time{
-				timea{
+				shift{
 					Serving: "Breakfast",
 					Items: []item{
 						item{
@@ -115,7 +115,7 @@ func main() {
 						},
 					},
 				},
-				timea{
+				shift{
 					Serving: "Lunch",
 					Items: []item{
 						item{
@@ -125,7 +125,7 @@ func main() {
 						},
 					},
 				},
-				timea{
+				shift{
 					Serving: "Dinner",
 					Items: []item{
 						item{
